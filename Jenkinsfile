@@ -5,7 +5,7 @@ def buildImageName = "nginx:latest"
 //The Docker file we will use to build the image we will Push to our repository
 def dockerFile = 'Dockerfile'
 //The image name we will Push to our repository
-def pushImageName = "sectools-hardened/odp-image-build-example"
+def pushImageName = "627566894399.dkr.ecr.us-east-1.amazonaws.com/sectools-hardened"
 //The image tag we will apply to the image we Push to our repository
 def pushImageTag = env.TAG_NAME ?: 'latest'
 //Setup Docker registry variables
