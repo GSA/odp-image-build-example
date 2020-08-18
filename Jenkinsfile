@@ -64,7 +64,7 @@ pipeline {
                         do not specify minor version the cached image will see this as an already met requirement and not reinstall
                         if caching is enabled.
                     */
-                    dockerImage = docker.build("${pushImageName}:${pushImageTag}", "-f ${dockerFile} --force-rm --no-cache ./")
+                    dockerImage = docker.build("${pushImageName}:${pushImageTag}", "-f ${dockerFile} --no-cache ./")
  
                 }
             }
