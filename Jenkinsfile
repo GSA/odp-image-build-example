@@ -98,13 +98,12 @@ pipeline {
             }
             steps {
                 script {
-                        docker.withRegistry("${ecrRegistryUrl}", "${ecrRegistryCredID}") {
-                            dockerImage.push()
-                            //Alternate way to push by image tag
-                            //docker.image('demo').push('latest')
-                        }
-                        
+                    docker.withRegistry("${ecrRegistryUrl}", "${ecrRegistryCredID}") {
+                        dockerImage.push()
+                        //Alternate way to push by image tag
+                        //docker.image('demo').push('latest')
                     }
+                    
                 }
             }
         }
