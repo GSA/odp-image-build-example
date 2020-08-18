@@ -107,7 +107,6 @@ pipeline {
                 }
             }
         }
-    }
  
     //After all Pipleline stages are complete
     post {
