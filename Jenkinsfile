@@ -35,8 +35,7 @@ pipeline {
                             //You can execute any shell scripts or builds tools you see fit.
                             sh "echo hi > src/html/hi.html"
                         }
-                        //You can optionally fire up another container if you require "sidecar" containers by adding another docker.image().inside.
-                    }
+                    //You can optionally fire up another container if you require "sidecar" containers by adding another docker.image().inside.
                     //Step 2. This is illustrating that changes made Step 2. inside the Container are persistent.
                     //This is due to the workspace being presented as a volume to the Container.
                     sh 'ls -la src/html/hi.html'
@@ -107,7 +106,7 @@ pipeline {
                 }
             }
         }
- 
+    }
     //After all Pipleline stages are complete
     post {
         //We don't have a slack channel :)
