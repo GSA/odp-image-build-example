@@ -10,7 +10,7 @@ def pushImageName = "odp-image-build-example"
 def pushImageTag = env.TAG_NAME ?: 'latest'
 //Setup Docker registry variables
 //The ECR registry information 
-def ecrRegistryUrl = '627566894399.dkr.ecr.us-east-1.amazonaws.com/sectools-hardened'
+def ecrRegistryUrl = 'https://627566894399.dkr.ecr.us-east-1.amazonaws.com/sectools-hardened'
 //Credential id stored
 def ecrRegistryCredID = 'ecr:us-east-1:sectools-aws-jenkins'
 //Slack Channel to post to for build status
