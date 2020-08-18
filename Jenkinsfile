@@ -12,7 +12,7 @@ def pushImageTag = env.TAG_NAME ?: 'latest'
 //The ECR registry information 
 def ecrRegistryUrl = '627566894399.dkr.ecr.us-east-1.amazonaws.com/sectools-hardened'
 //Credential id stored
-def ecrRegistryCredID = 'sectools-aws-jenkins'
+def ecrRegistryCredID = 'ecr:us-east-1:sectools-aws-jenkins'
 //Slack Channel to post to for build status
 def slackChannel = "sectools-builds"
  
